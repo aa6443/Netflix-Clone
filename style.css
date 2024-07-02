@@ -115,6 +115,11 @@ nav button {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1300px){
+  .first {
+    flex-wrap: wrap;
+  }
+}
 .secImg {
   position: relative;
 }
@@ -147,6 +152,50 @@ section.first > div :nth-child(2) {
   font-size: 24px;
   font-weight: bolder;
 }
+.faq {
+  background: black;
+  color: white;
+  padding: 34px;
+}
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+}
 .faqbox {
+  background: black;
+  color: white;
+  padding: 34px;
+}
+.faqbox {
+  transition: all 1s ease-out;
+  font-size: 24px;
   display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 34px auto;
+  cursor: pointer;
+}
+.faq svg{
+  filter: invert(1);
+}
+
+.faqbox:hover {
+  background-color: #414141;
+  color: white;
+}
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+footer .questions {
+  padding: 34px 0;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
 }
